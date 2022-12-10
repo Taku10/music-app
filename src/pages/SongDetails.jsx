@@ -23,6 +23,7 @@ const SongDetails = () => {
     if(isFetchingSongDetails || isFetchingRelatedSongs) return <Loader title='Searching song details' />;
 
     if(error) return <Error/>
+    console.log(songData.sections)
 
     return (
         <div>
